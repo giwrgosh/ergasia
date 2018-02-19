@@ -1,10 +1,10 @@
 import random
-number1= int ( input ("Δώστε τον πρώτο αριθμό σας (από το 1 έως καιτο 80): "))
-number2= int ( input ("Δώστε τον δεύτερο αριθμό σας (από το 1 έως και το 80): "))
-number3= int ( input ("Δώστε τον τρίτο αριθμό σας (από το 1 έως και το 80): "))
-number4= int ( input ("Δώστε τον τέταρτο αριθμό σας (από το 1 έως και το 80): "))
-number5= int ( input ("Δώστε τον πρώτο αριθμό σας (από το 1 έως και το 80): "))
-
+a = [int(x) for x in input("Δώστε τους 5 αριθμού σας από το 1 έως και το 80, χωρίς επανάληψη αριθμών, χωρισμένους με κόμματα(,) : ").split(',')]
+number1 = a[0]
+number2 = a[1]
+number3 = a[2]
+number4 = a[3]
+number5 = a[4]
 if number1 > 80:
 	import sys
 	sys.exit("Ο πρώτος αριθμός που δώσατε είναι μεγαλύτερος του 80 ")
@@ -117,7 +117,5 @@ for k in range(0, 999):
 			break
 			
 			
-apotelesma = int(sum/1000)	
-print(*players, sep="\n")	
-print (sum)
-print (apotelesma)	
+apotelesma = float(sum/1000)	
+print ("Ο μέσος όρος των αριθμών που πρέπει να να αναγγελθούν ώστε να έχουμε Bingo είναι: ",apotelesma)	
