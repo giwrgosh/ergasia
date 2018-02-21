@@ -10,10 +10,7 @@ user= input ("Πληκτρολογήστε το όνομα του προφιλ �
 
  
 
-consumer_key = 'T4QAW1Me7DJAumZ6snx1yJX2q'
-consumer_secret = 'pvEb9MKpjkPZq2TV2tCYKLOFQCU0Sopr8dcqt7yKminO0BGbfL'
-access_token = '962272370886107136-TwPMggJ0B8o061RZhgvd9hRqBuQWzMI'
-access_secret = 'g9lVLBlzE6IMkMRVIqkJ9pINqGXJZrT9AbU1EBdW4Ss93'
+
  
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
