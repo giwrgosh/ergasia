@@ -22,7 +22,7 @@ def compare_lists(l1,l2,y,b):
 		if i in l2:
 			s+=1
 			if s >= 4:
-				if y < s + 1:		
+				if y <= s:		
 					y = s
 					b = (date_str)			
 	print (b)
