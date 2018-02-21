@@ -21,9 +21,10 @@ def compare_lists(l1,l2,y,b):
 	for i in l1:
 		if i in l2:
 			s+=1
-			if y < s + 1:		
-				y = s
-				b = (date_str)			
+			if s >= 4:
+				if y < s + 1:		
+					y = s
+					b = (date_str)			
 	print (b)
 	return (y,s, b)
 
